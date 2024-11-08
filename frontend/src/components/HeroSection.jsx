@@ -56,7 +56,7 @@ const HeroSection = () => {
             <div className="absolute h-[50vh] w-[50vh] bg-white opacity-0 rounded-full z-0"></div>
 
             <div className="landing-round-main h-[50vh] w-[50vh] rounded-full z-10">
-              <img src="./src/media/hero-img.png" alt="" />
+              <img src="/hero-img.png" alt="" />
             </div>
 
             {/* Circles with Borders */}
