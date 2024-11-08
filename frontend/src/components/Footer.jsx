@@ -17,11 +17,9 @@ function Footer() {
               <h3 className="text-lg font-semibold text-pink-500 mb-2">Quick Links</h3>
               <ul className="text-sm space-y-2">
                 <li><a href="#" className="hover:text-pink-500 transition duration-200">Home</a></li>
-                <li><a href="#" className="hover:text-pink-500 transition duration-200">Benefits</a></li>
-                <li><a href="#" className="hover:text-pink-500 transition duration-200">Chapter</a></li>
-                <li><a href="#" className="hover:text-pink-500 transition duration-200">Pricing</a></li>
-                <li><a href="#" className="hover:text-pink-500 transition duration-200">Author</a></li>
-                <li><a href="#" className="hover:text-pink-500 transition duration-200">Achievements</a></li>
+                <li><a href="#" className="hover:text-pink-500 transition duration-200">About</a></li>
+                <li><a href="#" className="hover:text-pink-500 transition duration-200">Service</a></li>
+                <li><a href="#" className="hover:text-pink-500 transition duration-200">Docter</a></li>
                 <li><a href="#" className="hover:text-pink-500 transition duration-200">Contact</a></li>
               </ul>
             </div>
