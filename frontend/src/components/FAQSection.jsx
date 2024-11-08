@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -27,11 +28,7 @@ const FAQSection = () => {
   ];
 
   const handleToggle = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(null); 
-    } else {
-      setActiveIndex(index);
-    }
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
@@ -52,7 +49,6 @@ const FAQSection = () => {
             </div>
           </div>
 
-        
           <div className="space-y-6 h-full flex flex-col bg-white justify-center px-6 rounded-r-2xl">
           
             {faqs.map((faq, index) => (
@@ -63,11 +59,11 @@ const FAQSection = () => {
               >
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl font-semibold">{faq.question}</h3>
-                  <i
-                    className={`fas fa-chevron-down text-xl text-zinc-900 transform transition-transform duration-500 ${
+                  <FaChevronDown
+                    className={`text-xl text-zinc-900 transform transition-transform duration-500 ${
                       activeIndex === index ? 'rotate-180' : ''
                     }`}
-                  ></i>
+                  />
                 </div>
                 {activeIndex === index && (
                   <p className="text-base mt-4 text-zinc-500 transition-all duration-500">{faq.answer}</p>

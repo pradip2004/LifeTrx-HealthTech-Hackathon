@@ -1,40 +1,45 @@
 import React, { useState } from "react";
+import { FaUser, FaStethoscope, FaHandshake, FaPhoneAlt } from "react-icons/fa";
 
 const CardSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const sections = [
     {
+      icon: <FaUser className="text-3xl text-pink-500" />,
       title: "Patients",
       description: "Connect with trusted healthcare providers, manage appointments, and access medical records.",
       buttonText: "Get Started",
-      bgColor: "bg-white", // Set all divs to white
+      bgColor: "bg-white", 
       hoverColor: "hover:bg-gray-100",
-      number: "1,500", // Number of patients
+      number: "1,500",
     },
     {
+      icon: <FaStethoscope className="text-3xl text-pink-500" />,
       title: "Doctors",
       description: "Join our network to offer quality care and access innovative tools for patient management.",
       buttonText: "Join Now",
-      bgColor: "bg-white", // Set all divs to white
+      bgColor: "bg-white",
       hoverColor: "hover:bg-gray-100",
-      number: "300", // Number of doctors
+      number: "300",
     },
     {
+      icon: <FaHandshake className="text-3xl text-pink-500" />,
       title: "Partners",
       description: "Collaborate with us to expand healthcare accessibility and develop new solutions.",
       buttonText: "Get in Touch",
-      bgColor: "bg-white", // Set all divs to white
+      bgColor: "bg-white", 
       hoverColor: "hover:bg-gray-100",
-      number: "50", // Number of partners
+      number: "50",
     },
     {
+      icon: <FaPhoneAlt className="text-3xl text-pink-500" />,
       title: "24/7 Helpline",
       description: "We’re here to support you around the clock for any healthcare needs.",
       buttonText: "Call Now",
-      bgColor: "bg-white", // Set all divs to white
+      bgColor: "bg-white",
       hoverColor: "hover:bg-gray-100",
-      number: "200", // Number of helplines
+      number: "200",
     },
   ];
 
@@ -50,7 +55,7 @@ const CardSection = () => {
           >
             <div className={`relative z-10`}>
               <div className="flex items-center justify-between">
-                <div className="text-gray-500 text-sm font-semibold"></div>
+                {section.icon}
                 <div className="h-10 w-10 rounded-md bg-white shadow-md flex items-center justify-center">
                   <span className="text-lg font-semibold text-gray-600">
                     {index + 1}

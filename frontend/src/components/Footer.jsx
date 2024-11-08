@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
             <div className="flex flex-col items-start">
               <h2 className="text-3xl font-bold text-pink-500 mb-4 ">Mediease</h2>
               <p className="text-sm mb-4">Connecting patients with top healthcare providers and wellness experts.</p>
-              <img src="https://i.pinimg.com/564x/2d/45/92/2d4592403bcb48279bf0c38204a01798.jpg" alt="Mediease" className="rounded-lg  w-full " />
+              <img src="https://i.pinimg.com/564x/2d/45/92/2d4592403bcb48279bf0c38204a01798.jpg" alt="Mediease" className="rounded-lg w-full " />
             </div>
 
             <div>
@@ -38,10 +39,10 @@ function Footer() {
             <div>
               <h3 className="text-lg font-semibold text-pink-500 mb-2">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-800 hover:text-pink-500 transition duration-200"><i className="fab fa-facebook-f"></i></a>
-                <a href="#" className="text-gray-800 hover:text-pink-500 transition duration-200"><i className="fab fa-twitter"></i></a>
-                <a href="#" className="text-gray-800 hover:text-pink-500 transition duration-200"><i className="fab fa-instagram"></i></a>
-                <a href="#" className="text-gray-800 hover:text-pink-500 transition duration-200"><i className="fab fa-linkedin-in"></i></a>
+                <a href="#" className="text-gray-800 hover:text-pink-500 transition duration-200"><FaFacebookF /></a>
+                <a href="#" className="text-gray-800 hover:text-pink-500 transition duration-200"><FaTwitter /></a>
+                <a href="#" className="text-gray-800 hover:text-pink-500 transition duration-200"><FaInstagram /></a>
+                <a href="#" className="text-gray-800 hover:text-pink-500 transition duration-200"><FaLinkedinIn /></a>
               </div>
             </div>
           </div>

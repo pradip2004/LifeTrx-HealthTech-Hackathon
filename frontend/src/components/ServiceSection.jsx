@@ -1,34 +1,35 @@
 import React from 'react';
-import InfoSection from '/src/Components/InfoSection';  
+import InfoSection from '/src/Components/InfoSection';
+import { FaSpa, FaVideo, FaClock, FaLaptop, FaUserMd, FaMobileAlt } from 'react-icons/fa';
 
 const services = [
   {
-    icon: 'fas fa-spa',
+    icon: <FaSpa className="text-4xl text-pink-500" />,
     title: 'Yoga',
     description: 'Engage in tailored yoga sessions to enhance both your physical and mental health. Whether online or offline, our expert instructors will guide you every step of the way.',
   },
   {
-    icon: 'fas fa-video',
+    icon: <FaVideo className="text-4xl text-pink-500" />,
     title: 'Video Call Service',
     description: 'Access top-tier mental health professionals through secure video calls, providing you with a confidential, accessible, and flexible consultation experience, anywhere you are.',
   },
   {
-    icon: 'fas fa-clock',
+    icon: <FaClock className="text-4xl text-pink-500" />,
     title: '24/7 Support',
     description: 'Our dedicated support team is available around the clock to ensure you receive the mental health assistance you need, whenever you need it.',
   },
   {
-    icon: 'fas fa-laptop',
+    icon: <FaLaptop className="text-4xl text-pink-500" />,
     title: 'Online & Offline Mode',
     description: 'Choose between seamless online consultations or in-person visits, giving you the flexibility to select the mode that suits your preferences and schedule.',
   },
   {
-    icon: 'fas fa-user-md',
+    icon: <FaUserMd className="text-4xl text-pink-500" />,
     title: 'Best Doctors',
     description: 'Consult with the best licensed mental health professionals, offering expert care and guidance to support your overall well-being and mental health.',
   },
   {
-    icon: 'fas fa-mobile-alt',
+    icon: <FaMobileAlt className="text-4xl text-pink-500" />,
     title: 'App Integration',
     description: 'Access all our services on-the-go through our intuitive mobile app, designed for easy scheduling, communication, and tracking your mental health journey.',
   },
